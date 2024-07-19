@@ -1,0 +1,144 @@
+/*desktop view*/
+@media (min-width: 992px) {
+  body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: url("background-pattern-desktop.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: 10% auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .accordion-header {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .accordion-content {
+    padding: 10px 20px;
+    display: none;
+    color: rgb(192, 192, 192);
+  }
+  button {
+    border: none;
+    background-color: transparent;
+  }
+
+  .toggle-btn {
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .show-btn {
+    display: inline-block;
+  }
+
+  .hide-btn {
+    display: none;
+  }
+
+  /* Show buttons when accordion is active */
+  .accordion-item.active .show-btn {
+    display: none;
+  }
+
+  .accordion-item.active .hide-btn {
+    display: inline-block;
+  }
+}
+/*mobile view*/
+@media (min-width: 340px) and (max-width: 991px) {
+  body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: url("background-pattern-mobile.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 45vh;
+  }
+
+  .container {
+    width: 300px;
+    margin: 10% auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .accordion-header {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .accordion-content {
+    padding: 10px 20px;
+    display: none;
+    color: rgb(192, 192, 192);
+  }
+  button {
+    border: none;
+    background-color: transparent;
+  }
+
+  .toggle-btn {
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .show-btn {
+    display: inline-block;
+  }
+
+  .hide-btn {
+    display: none;
+  }
+
+  /* Show buttons when accordion is active */
+  .accordion-item.active .show-btn {
+    display: none;
+  }
+
+  .accordion-item.active .hide-btn {
+    display: inline-block;
+  }
+}
